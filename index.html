@@ -104,14 +104,25 @@
 
     function openGallery(id) {
 
-      document.getElementById("graphic-design").style.display = "none";
+      if (document.getElementById("graphic-design")) {
+        document.getElementById("graphic-design").style.display = "none";
+      }
+      if (document.getElementById("motion-graphics")) {
+        document.getElementById("motion-graphics").style.display = "none";
+      }
       document.getElementById(id).style.display = "block";
+      window.scrollTo({ top: 0, behavior: 'smooth' });
 
     }
 
     function closeGallery() {
 
-      document.getElementById("graphic-design").style.display = "block";
+      if (document.getElementById("graphic-design")) {
+        document.getElementById("graphic-design").style.display = "block";
+      }
+      if (document.getElementById("motion-graphics")) {
+        document.getElementById("motion-graphics").style.display = "block";
+      }
 
       document.querySelectorAll(".gallery-page").forEach(g => {
         g.style.display = "none";
@@ -126,6 +137,20 @@
 
     function closeImage() {
       document.getElementById("imageViewer").style.display = "none";
+    }
+
+    function openVideo(src) {
+      document.getElementById("videoViewer").style.display = "flex";
+      let video = document.getElementById("viewerVideo");
+      video.src = src;
+      video.play();
+    }
+
+    function closeVideo() {
+      let video = document.getElementById("viewerVideo");
+      video.pause();
+      video.src = "";
+      document.getElementById("videoViewer").style.display = "none";
     }
 
   </script>
@@ -197,6 +222,7 @@
         <li><a href="#about" class="smoothScroll">About</a></li>
         <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
         <li><a href="#graphic-design" class="smoothScroll">Graphic Design</a></li>
+        <li><a href="#motion-graphics" class="smoothScroll">Motion Graphics</a></li>
         <li><a href="#web-projects" class="smoothScroll">Web Projects</a></li>
         <li><a href="#contact" class="smoothScroll">Contact</a></li>
       </ul>
@@ -594,6 +620,62 @@
 
   </section>
 
+  <!-- ===== Motion Graphics & Video Editing Section ===== -->
+  <section id="motion-graphics" class="paddsection">
+
+    <div class="container text-center">
+
+      <div class="section-title">
+        <h2 class="modern-title">Motion Graphics & Video Editing</h2>
+        <p>Creative commercial ads, dynamic transitions, and engaging animations.</p>
+      </div>
+
+      <div class="row">
+
+        <!-- Commercial & Promotional Ads -->
+        <div class="col-lg-4 col-md-6">
+          <div class="design-card" onclick="openGallery('promo-gallery')">
+            <video class="img-fluid" muted loop playsinline autoplay preload="metadata">
+              <source src="videos/1.mp4" type="video/mp4">
+            </video>
+            <div class="design-info">
+              <h3>Commercials & Promo Videos</h3>
+              <p>Engaging promotional and advertising video edits.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Motion Design & VFX -->
+        <div class="col-lg-4 col-md-6">
+          <div class="design-card" onclick="openGallery('motion-gallery')">
+            <video class="img-fluid" muted loop playsinline autoplay preload="metadata">
+              <source src="videos/3.mp4" type="video/mp4">
+            </video>
+            <div class="design-info">
+              <h3>Motion Graphics & Visuals</h3>
+              <p>Dynamic text animation, visual effects, and graphic motion design.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cinematic Edits -->
+        <div class="col-lg-4 col-md-6">
+          <div class="design-card" onclick="openGallery('cinematic-gallery')">
+            <video class="img-fluid" muted loop playsinline autoplay preload="metadata">
+              <source src="videos/5.mp4" type="video/mp4">
+            </video>
+            <div class="design-info">
+              <h3>Cinematic Edits</h3>
+              <p>Color grading, sound design, and narrative-driven video editing projects.</p>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- row -->
+    </div> <!-- container -->
+
+  </section>
+
   <!-- Poster Gallery -->
   <div id="poster-gallery" class="gallery-page">
 
@@ -785,6 +867,62 @@
   <!-- IMAGE VIEWER (ADD HERE) -->
   <div id="imageViewer" class="image-viewer" onclick="closeImage()">
     <img id="viewerImg" alt="Full size preview">
+  </div>
+
+  <!-- Promo Videos Gallery -->
+  <div id="promo-gallery" class="gallery-page">
+    <button class="back-btn" onclick="closeGallery()">← Back</button>
+    <div class="gallery-grid">
+      <div class="video-item" onclick="openVideo('videos/1.mp4')">
+        <video src="videos/1.mp4" muted loop playsinline autoplay></video>
+        <div class="video-overlay-icon">
+          <i class="ion-play"></i>
+        </div>
+      </div>
+      <div class="video-item" onclick="openVideo('videos/2.mp4')">
+        <video src="videos/2.mp4" muted loop playsinline autoplay></video>
+        <div class="video-overlay-icon">
+          <i class="ion-play"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Motion Graphics Gallery -->
+  <div id="motion-gallery" class="gallery-page">
+    <button class="back-btn" onclick="closeGallery()">← Back</button>
+    <div class="gallery-grid">
+      <div class="video-item" onclick="openVideo('videos/3.mp4')">
+        <video src="videos/3.mp4" muted loop playsinline autoplay></video>
+        <div class="video-overlay-icon">
+          <i class="ion-play"></i>
+        </div>
+      </div>
+      <div class="video-item" onclick="openVideo('videos/4.mp4')">
+        <video src="videos/4.mp4" muted loop playsinline autoplay></video>
+        <div class="video-overlay-icon">
+          <i class="ion-play"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cinematic Edits Gallery -->
+  <div id="cinematic-gallery" class="gallery-page">
+    <button class="back-btn" onclick="closeGallery()">← Back</button>
+    <div class="gallery-grid">
+      <div class="video-item" onclick="openVideo('videos/5.mp4')">
+        <video src="videos/5.mp4" muted loop playsinline autoplay></video>
+        <div class="video-overlay-icon">
+          <i class="ion-play"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIDEO VIEWER -->
+  <div id="videoViewer" class="image-viewer" onclick="closeVideo()">
+    <video id="viewerVideo" controls autoplay onclick="event.stopPropagation()"></video>
   </div>
   <!-- ===== Web Projects Section ===== -->
   <section id="web-projects" class="paddsection text-center">
