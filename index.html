@@ -11,7 +11,8 @@
   <meta content="Game Developer, Unity, Unreal, Technical Artist, Portfolio" name="keywords">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syncopate:wght@700&family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"><!-- Bootstrap CSS -->
 
@@ -211,20 +212,23 @@
   <nav id="main-nav">
     <div class="container d-flex justify-content-between align-items-center">
       <div class="logo">
-        <a href="#header"><img src="images/logo.png" alt="logo"></a>
+        <a href="#header" class="cyber-brand-logo">
+          <span class="logo-glitch" data-text="SRIDHIN.IO">SRIDHIN.IO</span>
+          <span class="logo-status-tag">SYS_ONLINE</span>
+        </a>
       </div>
       <div class="responsive" id="menu-toggle">
-        <i class="ion-navicon-round"></i>
+        <i class="fas fa-bars-staggered"></i>
       </div>
 
       <ul class="nav-menu list-unstyled d-flex">
-        <li><a href="#header" class="smoothScroll">Home</a></li>
-        <li><a href="#about" class="smoothScroll">About</a></li>
-        <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
-        <li><a href="#graphic-design" class="smoothScroll">Graphic Design</a></li>
-        <li><a href="#motion-graphics" class="smoothScroll">Motion Graphics</a></li>
-        <li><a href="#web-projects" class="smoothScroll">Web Projects</a></li>
-        <li><a href="#contact" class="smoothScroll">Contact</a></li>
+        <li><a href="#header" class="smoothScroll"><span class="nav-bracket">[</span><span class="nav-text">HOME</span><span class="nav-bracket">]</span></a></li>
+        <li><a href="#about" class="smoothScroll"><span class="nav-bracket">[</span><span class="nav-text">ABOUT</span><span class="nav-bracket">]</span></a></li>
+        <li><a href="#portfolio" class="smoothScroll"><span class="nav-bracket">[</span><span class="nav-text">GAMES</span><span class="nav-bracket">]</span></a></li>
+        <li><a href="#graphic-design" class="smoothScroll"><span class="nav-bracket">[</span><span class="nav-text">GRAPHIC_SYS</span><span class="nav-bracket">]</span></a></li>
+        <li><a href="#motion-graphics" class="smoothScroll"><span class="nav-bracket">[</span><span class="nav-text">VFX_MOTION</span><span class="nav-bracket">]</span></a></li>
+        <li><a href="#web-projects" class="smoothScroll"><span class="nav-bracket">[</span><span class="nav-text">WEB_NODES</span><span class="nav-bracket">]</span></a></li>
+        <li><a href="#contact" class="smoothScroll"><span class="nav-bracket">[</span><span class="nav-text">CONTACT</span><span class="nav-bracket">]</span></a></li>
       </ul>
     </div>
   </nav>
@@ -236,7 +240,6 @@
     <div id="particles-js"></div>
 
     <!-- Shooting stars -->
-
     <div class="pixel-meteor meteor-1"></div>
     <div class="pixel-meteor meteor-2"></div>
     <div class="pixel-meteor meteor-3"></div>
@@ -279,241 +282,363 @@
       </svg>
     </div>
 
-    <div class="container">
-      <div class="header-content">
+    <div class="cyber-hero-container">
 
-        <h1>I am <strong>Sridhinraj K.P</strong></h1>
-
-        <div class="role-container">
-          <span class="role game-developer">Game Developer</span>
-          <span class="role technical-artist">Technical Artist</span>
+      <!-- Left Column: Typography, Terminal Metadata & CTAs -->
+      <div class="cyber-hero-left">
+        <div class="cyber-terminal-meta">
+          <span class="meta-tag">// SYSTEM_ID: SRIDHINRAJ_KP //</span>
+          <span class="meta-sub">GAME DEVELOPER · TECHNICAL ARTIST</span>
         </div>
 
-        <ul class="list-unstyled list-social">
-          <li><a href="https://www.facebook.com/Sridhinrajsro" title="Facebook" target="_blank"
-              rel="noopener noreferrer"><i class="ion-social-facebook"></i></a></li>
-          <li><a href="https://www.instagram.com/sridhin_raj_" title="Instagram" target="_blank"
-              rel="noopener noreferrer"><i class="ion-social-instagram"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/sridhin-raj-kp-979bb4255" title="LinkedIn" target="_blank"
-              rel="noopener noreferrer"><i class="ion-social-linkedin"></i></a>
-          </li>
-        </ul>
+        <h1 class="cyber-glitch-title" data-text="SRIDHINRAJ K.P">
+          <span class="cyber-name-first">SRIDHINRAJ</span>
+          <span class="highlight-text cyber-name-last">K.P.</span>
+        </h1>
 
-        <div class="cv-buttons">
+        <div class="cyber-tagline-box">
+          <span class="cyber-badge">&gt; BREAK THE GRID &lt;</span>
+          <p class="cyber-subtag">DESIGN WITHOUT RULES · BUILD WITHOUT LIMITS</p>
+        </div>
 
-          <a href="Simple Professional CV Resume_20250226_121427_0000.pdf" download class="btn btn-warning">
-            Download CV
+        <div class="cyber-actions-group">
+          <a href="#portfolio" class="cyber-link-btn primary-cyber">
+            <span class="cyber-prompt">&gt;</span> <i class="fas fa-terminal cyber-btn-icon cyber-glitch-icon"></i> VIEW WORK_
           </a>
-
-          <a href="ATS friendly cv.pdf" download class="btn-ats">
-            ATS CV
+          <a href="#about" class="cyber-link-btn">
+            <span class="cyber-prompt">&gt;</span> <i class="fas fa-user-astronaut cyber-btn-icon cyber-glitch-icon"></i> ABOUT ME_
           </a>
+          <a href="Simple Professional CV Resume_20250226_121427_0000.pdf" download class="cyber-link-btn download-cyber">
+            <span class="cyber-prompt">&gt;</span> <i class="fas fa-file-code cyber-btn-icon cyber-glitch-icon"></i> DOWNLOAD CV_
+          </a>
+        </div>
 
+        <div class="cyber-social-terminal">
+          <span class="term-lbl">[NET_CONNECT]</span>
+          <a href="https://www.facebook.com/Sridhinrajsro" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook cyber-icon-sm"></i> [FB]</a>
+          <a href="https://www.instagram.com/sridhin_raj_" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram cyber-icon-sm"></i> [IG]</a>
+          <a href="https://www.linkedin.com/in/sridhin-raj-kp-979bb4255" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin cyber-icon-sm"></i> [IN]</a>
         </div>
       </div>
 
+      <!-- Right Column: Stylized Matrix CRT Glitch Portrait -->
+      <div class="cyber-hero-right">
+        <div class="cyber-portrait-frame">
+          <!-- Cyber HUD corner brackets -->
+          <div class="hud-corner top-left"></div>
+          <div class="hud-corner top-right"></div>
+          <div class="hud-corner bottom-left"></div>
+          <div class="hud-corner bottom-right"></div>
+
+          <!-- Status telemetry tags -->
+          <div class="hud-sys-status">
+            <span class="sys-dot">●</span>
+            <span class="sys-dot">●</span>
+            <span class="sys-text">SYS_01</span>
+          </div>
+
+          <div class="cyber-image-wrapper">
+            <img src="images/cyberpunk-hero.jpg" alt="Sridhinraj Cyberpunk Matrix Portrait" class="cyber-portrait-img">
+            <div class="crt-scanlines"></div>
+            <div class="cyber-glitch-overlay"></div>
+          </div>
+
+          <!-- Telemetry Callout Box -->
+          <div class="hud-callout-box">
+            <div class="hud-callout-title">INTERFACE IS THE MESSAGE.</div>
+            <div class="hud-callout-year">2026_</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
   </header>
+
   <!--=====About Section=====-->
-  <div id="about" class="paddsection">
+  <div id="about" class="paddsection cyber-section">
     <div class="container">
+      <div class="cyber-section-header text-center">
+        <span class="cyber-section-tag">// IDENTITY_MODULE //</span>
+        <h2 class="cyber-section-title">ABOUT THE OPERATOR</h2>
+      </div>
+
       <div class="row justify-content-between align-items-center">
 
         <!-- Image column -->
         <div class="col-lg-4 col-md-5 col-12 text-center">
-          <div class="div-img-bg">
+          <div class="div-img-bg cyber-hud-frame">
+            <div class="hud-corner top-left"></div>
+            <div class="hud-corner top-right"></div>
+            <div class="hud-corner bottom-left"></div>
+            <div class="hud-corner bottom-right"></div>
             <img src="images/me.jpg" class="img-fluid" alt="me">
+            <div class="crt-scanlines"></div>
+            <div class="hud-badge-corner">[BIO_DATA]</div>
           </div>
         </div>
 
         <!-- Text column -->
         <div class="col-lg-7 col-md-7 col-12">
-          <div class="about-descr">
+          <div class="about-descr cyber-terminal-card">
+            <div class="terminal-bar">
+              <span class="term-dot red"></span>
+              <span class="term-dot yellow"></span>
+              <span class="term-dot green"></span>
+              <span class="term-title">terminal://usr/sridhinraj/bio.sh</span>
+            </div>
             <p class="p-heading">
-              I am a Game Developer, Technical Artist, and Creative Designer passionate about building immersive
-              worlds and
-              interactive experiences. By combining technical expertise with artistic vision, I craft games and
-              digital
-              projects that are both innovative and visually engaging.
+              <span class="prompt-symbol">&gt; </span>I am a <strong class="glitch-word">Game Developer</strong>, <strong class="glitch-word">Technical Artist</strong>, and <strong class="glitch-word">Creative Designer</strong> passionate about building immersive worlds and interactive experiences. By combining technical expertise with artistic vision, I craft games and digital projects that are both innovative and visually engaging.
             </p>
+            <div class="cyber-spec-grid">
+              <div class="spec-node"><i class="fas fa-microchip cyber-glitch-icon"></i> <span>FOCUS: Real-Time Systems</span></div>
+              <div class="spec-node"><i class="fas fa-cubes cyber-glitch-icon"></i> <span>CORE: Unity & Unreal Engine</span></div>
+              <div class="spec-node"><i class="fas fa-wand-magic-sparkles cyber-glitch-icon"></i> <span>VFX: Shaders & Technical Art</span></div>
+              <div class="spec-node"><i class="fas fa-code cyber-glitch-icon"></i> <span>DEV: Interactive 3D Web</span></div>
+            </div>
           </div>
         </div>
 
       </div>
     </div>
   </div>
+
   <!-- ===== Skills Section ===== -->
-  <div id="services">
+  <div id="services" class="cyber-section">
     <div class="container">
+      <div class="cyber-section-header text-center">
+        <span class="cyber-section-tag">// SYSTEM_DIAGNOSTICS //</span>
+        <h2 class="cyber-section-title">TECHNICAL MASTERY</h2>
+      </div>
       <div class="services-carousel owl-theme text-center">
-        <div class="services-block"><i class="fas fa-gamepad"></i><span>Unity</span>
-          <p>70%</p>
+        <div class="services-block cyber-skill-card">
+          <div class="skill-icon-frame"><i class="fas fa-gamepad cyber-glitch-icon"></i></div>
+          <span>Unity (C#)</span>
+          <p class="skill-pct">70%</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
         </div>
-        <div class="services-block"><i class="fas fa-gamepad"></i><span>Unreal Engine</span>
-          <p>60%</p>
+        <div class="services-block cyber-skill-card">
+          <div class="skill-icon-frame"><i class="fas fa-vr-cardboard cyber-glitch-icon"></i></div>
+          <span>Unreal Engine</span>
+          <p class="skill-pct">60%</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 60%"></div></div>
         </div>
-        <div class="services-block"><i class="fas fa-paint-brush"></i><span>Photoshop</span>
-          <p>70%</p>
+        <div class="services-block cyber-skill-card">
+          <div class="skill-icon-frame"><i class="fas fa-paintbrush cyber-glitch-icon"></i></div>
+          <span>Photoshop</span>
+          <p class="skill-pct">70%</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
         </div>
-        <div class="services-block"><i class="fas fa-cube"></i><span>Maya</span>
-          <p>50%</p>
+        <div class="services-block cyber-skill-card">
+          <div class="skill-icon-frame"><i class="fas fa-cube cyber-glitch-icon"></i></div>
+          <span>Maya</span>
+          <p class="skill-pct">50%</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 50%"></div></div>
         </div>
-        <div class="services-block"><i class="fas fa-cube"></i><span>Blender</span>
-          <p>60%</p>
+        <div class="services-block cyber-skill-card">
+          <div class="skill-icon-frame"><i class="fas fa-cubes-stacked cyber-glitch-icon"></i></div>
+          <span>Blender</span>
+          <p class="skill-pct">60%</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 60%"></div></div>
         </div>
-        <div class="services-block"><i class="fas fa-video"></i><span>After Effects</span>
-          <p>70%</p>
+        <div class="services-block cyber-skill-card">
+          <div class="skill-icon-frame"><i class="fas fa-film cyber-glitch-icon"></i></div>
+          <span>After Effects</span>
+          <p class="skill-pct">70%</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
         </div>
-        <div class="services-block"><i class="fas fa-video"></i><span>Premiere Pro</span>
-          <p>70%</p>
+        <div class="services-block cyber-skill-card">
+          <div class="skill-icon-frame"><i class="fas fa-clapperboard cyber-glitch-icon"></i></div>
+          <span>Premiere Pro</span>
+          <p class="skill-pct">70%</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
         </div>
-        <div class="services-block"><i class="fas fa-cube"></i><span>Illustrator</span>
-          <p>80%</p>
+        <div class="services-block cyber-skill-card">
+          <div class="skill-icon-frame"><i class="fas fa-bezier-curve cyber-glitch-icon"></i></div>
+          <span>Illustrator</span>
+          <p class="skill-pct">80%</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- ===== Portfolio Section ===== -->
-  <div id="portfolio" class="text-center paddsection">
+  <div id="portfolio" class="text-center paddsection cyber-section">
     <div class="container">
 
-      <div class="section-title text-center">
-        <h2>My Games</h2>
+      <div class="section-title text-center cyber-section-header">
+        <span class="cyber-section-tag">// SIMULATION_DEPLOYMENTS //</span>
+        <h2 class="cyber-section-title">INTERACTIVE & GAMES</h2>
       </div>
 
       <!-- Game 1 -->
-      <div class="portfolio-thumbnail game-card">
+      <div class="portfolio-thumbnail game-card cyber-card-frame">
+        <div class="hud-corner top-left"></div>
+        <div class="hud-corner top-right"></div>
+        <div class="hud-corner bottom-left"></div>
+        <div class="hud-corner bottom-right"></div>
 
         <video id="gameVideo1" playsinline preload="metadata" muted loop width="600" height="336">
           <source src="images/lv_0_20240217072114 (1).mp4" type="video/mp4">
         </video>
 
-        <button class="sound-btn" onclick="toggleSound('gameVideo1', this)">🔇</button>
+        <button class="sound-btn" onclick="toggleSound('gameVideo1', this)"><i class="fas fa-volume-xmark"></i></button>
 
         <div class="game-overlay">
+          <span class="game-tag-badge">[STRATEGY · 3D]</span>
           <h3>Chronicles of Celestial Echo</h3>
-          <p>3D strategy survival game.</p>
-          <a href="https://sridhinrajkp.itch.io/chronicles-of-celestial-echo" class="play-btn" target="_blank"
-            rel="noopener noreferrer">Play
-            Now</a>
+          <p>3D strategy survival game featuring rich procedural terrain and custom mechanics.</p>
+          <a href="https://sridhinrajkp.itch.io/chronicles-of-celestial-echo" class="play-btn cyber-play-btn" target="_blank"
+            rel="noopener noreferrer"><i class="fas fa-play cyber-btn-icon"></i> EXECUTE_GAME</a>
         </div>
 
       </div>
 
 
       <!-- Game 2 -->
-      <div class="portfolio-thumbnail game-card">
+      <div class="portfolio-thumbnail game-card cyber-card-frame">
+        <div class="hud-corner top-left"></div>
+        <div class="hud-corner top-right"></div>
+        <div class="hud-corner bottom-left"></div>
+        <div class="hud-corner bottom-right"></div>
 
         <video id="gameVideo2" playsinline preload="metadata" muted loop width="600" height="336">
           <source src="images/survival.mp4" type="video/mp4">
         </video>
 
-        <button class="sound-btn" onclick="toggleSound('gameVideo2', this)">🔇</button>
+        <button class="sound-btn" onclick="toggleSound('gameVideo2', this)"><i class="fas fa-volume-xmark"></i></button>
 
         <div class="game-overlay">
+          <span class="game-tag-badge">[SURVIVAL · ACTION]</span>
           <h3>Dungeon Escape</h3>
-          <p>3D survival game where the player must escape a dungeon by completing missions and avoiding enemies.</p>
+          <p>3D survival experience where the operator navigates high-stakes dungeon puzzles and hostile entities.</p>
         </div>
 
       </div>
 
 
       <!-- Game 3 -->
-      <div class="portfolio-thumbnail game-card">
+      <div class="portfolio-thumbnail game-card cyber-card-frame">
+        <div class="hud-corner top-left"></div>
+        <div class="hud-corner top-right"></div>
+        <div class="hud-corner bottom-left"></div>
+        <div class="hud-corner bottom-right"></div>
 
         <video id="gameVideo3" playsinline preload="metadata" muted loop width="600" height="336">
           <source src="images/bottleblaster.mp4" type="video/mp4">
         </video>
 
-        <button class="sound-btn" onclick="toggleSound('gameVideo3', this)">🔇</button>
+        <button class="sound-btn" onclick="toggleSound('gameVideo3', this)"><i class="fas fa-volume-xmark"></i></button>
 
         <div class="game-overlay">
+          <span class="game-tag-badge">[VR · SPATIAL]</span>
           <h3>Bottle Blaster VR</h3>
-          <p>An immersive VR experience where players shoot bottles using different guns across dynamic environments.
-          </p>
+          <p>An immersive VR simulation where players test ballistic precision across dynamic environments.</p>
         </div>
 
       </div>
 
 
       <!-- Game 4 -->
-      <div class="portfolio-thumbnail game-card">
+      <div class="portfolio-thumbnail game-card cyber-card-frame">
+        <div class="hud-corner top-left"></div>
+        <div class="hud-corner top-right"></div>
+        <div class="hud-corner bottom-left"></div>
+        <div class="hud-corner bottom-right"></div>
 
         <video id="gameVideo4" playsinline preload="metadata" muted loop width="600" height="336">
           <source src="images/HEDGEHOG EFFECT (1).mp4" type="video/mp4">
         </video>
 
-        <button class="sound-btn" onclick="toggleSound('gameVideo4', this)">🔇</button>
+        <button class="sound-btn" onclick="toggleSound('gameVideo4', this)"><i class="fas fa-volume-xmark"></i></button>
 
         <div class="game-overlay">
-          <h3>Hedgehog Labelling</h3>
-          <p>Dynamic labeling system that positions labels based on camera position and object radius.</p>
+          <span class="game-tag-badge">[TECHNICAL ART · UI]</span>
+          <h3>Hedgehog Dynamic Labelling</h3>
+          <p>Dynamic labeling system that positions HUD telemetry in 3D space based on camera angle and object radius.</p>
         </div>
 
       </div>
 
 
       <!-- Game 5 -->
-      <div class="portfolio-thumbnail game-card">
+      <div class="portfolio-thumbnail game-card cyber-card-frame">
+        <div class="hud-corner top-left"></div>
+        <div class="hud-corner top-right"></div>
+        <div class="hud-corner bottom-left"></div>
+        <div class="hud-corner bottom-right"></div>
 
         <video id="gameVideo5" playsinline preload="metadata" muted loop width="600" height="336">
           <source src="images/wobble effect.mp4" type="video/mp4">
         </video>
 
-        <button class="sound-btn" onclick="toggleSound('gameVideo5', this)">🔇</button>
+        <button class="sound-btn" onclick="toggleSound('gameVideo5', this)"><i class="fas fa-volume-xmark"></i></button>
 
         <div class="game-overlay">
+          <span class="game-tag-badge">[SHADER GRAPH · HLSL]</span>
           <h3>Wobble Effect Unity Shader</h3>
-          <p>Dynamic liquid wobble effect using Unity Shader Graph.</p>
+          <p>Dynamic liquid wobble and meniscus refraction crafted using Unity Shader Graph.</p>
         </div>
 
       </div>
 
 
       <!-- Game 6 -->
-      <div class="portfolio-thumbnail game-card">
+      <div class="portfolio-thumbnail game-card cyber-card-frame">
+        <div class="hud-corner top-left"></div>
+        <div class="hud-corner top-right"></div>
+        <div class="hud-corner bottom-left"></div>
+        <div class="hud-corner bottom-right"></div>
 
         <video id="gameVideo6" playsinline preload="metadata" muted loop width="600" height="336">
           <source src="images/Blinking Lights.mp4" type="video/mp4">
         </video>
 
-        <button class="sound-btn" onclick="toggleSound('gameVideo6', this)">🔇</button>
+        <button class="sound-btn" onclick="toggleSound('gameVideo6', this)"><i class="fas fa-volume-xmark"></i></button>
 
         <div class="game-overlay">
+          <span class="game-tag-badge">[VFX · SHADER GRAPH]</span>
           <h3>Fresnel Blinking Light Effect</h3>
-          <p>Blinking light effect created using Fresnel in Unity Shader.</p>
+          <p>Cyberpunk neon pulsation effect generated via procedural Fresnel equations in Unity.</p>
         </div>
 
       </div>
 
 
       <!-- Game 7 -->
-      <div class="portfolio-thumbnail game-card">
+      <div class="portfolio-thumbnail game-card cyber-card-frame">
+        <div class="hud-corner top-left"></div>
+        <div class="hud-corner top-right"></div>
+        <div class="hud-corner bottom-left"></div>
+        <div class="hud-corner bottom-right"></div>
 
         <video id="gameVideo7" playsinline preload="metadata" muted loop width="600" height="336">
           <source src="images/puzzzle star 2d.mp4" type="video/mp4">
         </video>
 
-        <button class="sound-btn" onclick="toggleSound('gameVideo7', this)">🔇</button>
+        <button class="sound-btn" onclick="toggleSound('gameVideo7', this)"><i class="fas fa-volume-xmark"></i></button>
 
         <div class="game-overlay">
+          <span class="game-tag-badge">[2D LOGIC · SPEED]</span>
           <h3>Puzzle Star 2D</h3>
-          <p>Connect the stars to solve each puzzle. Every round gets harder with more stars to link — beat it all
-            within 60 seconds!</p>
+          <p>Link the constellation nodes to bypass security sectors before the 60-second system lock.</p>
         </div>
 
       </div>
 
     </div>
   </div>
+
   <!-- ===== Graphic Design Section ===== -->
-  <section id="graphic-design" class="paddsection">
+  <section id="graphic-design" class="paddsection cyber-section">
 
     <div class="container text-center">
 
-      <div class="section-title">
-        <h2 class="modern-title">Graphic Design Works</h2>
-        <p>Creative posters, digital art, and branding visuals crafted with passion.</p>
+      <div class="section-title cyber-section-header">
+        <span class="cyber-section-tag">// VISUAL_SCHEMATICS //</span>
+        <h2 class="modern-title cyber-section-title">GRAPHIC DESIGN SYSTEMS</h2>
+        <p class="cyber-section-sub">Vector branding, tactical posters, and digital identity matrices.</p>
       </div>
 
       <div class="row">
@@ -521,13 +646,17 @@
         <!-- Poster Design -->
         <div class="col-lg-4 col-md-6">
 
-          <div class="design-card" onclick="openGallery('poster-gallery')">
+          <div class="design-card cyber-design-card" onclick="openGallery('poster-gallery')">
+            <div class="hud-corner top-left"></div>
+            <div class="hud-corner bottom-right"></div>
 
-            <img src="images/portfolio/flyer.1.jpg" class="img-fluid" alt="">
+            <img src="images/portfolio/flyer.1.jpg" class="img-fluid" alt="Minimal Poster Design">
 
             <div class="design-info">
+              <span class="card-node-id">[POSTER_01]</span>
               <h3>Minimal Poster Design</h3>
-              <p>A clean and modern poster designed for a fashion campaign.</p>
+              <p>Clean editorial visual system engineered for fashion campaigns.</p>
+              <span class="cyber-view-link">&gt; OPEN_GALLERY_</span>
             </div>
 
           </div>
@@ -537,13 +666,17 @@
         <!-- Logo Design -->
         <div class="col-lg-4 col-md-6">
 
-          <div class="design-card" onclick="openGallery('logo-gallery')">
+          <div class="design-card cyber-design-card" onclick="openGallery('logo-gallery')">
+            <div class="hud-corner top-left"></div>
+            <div class="hud-corner bottom-right"></div>
 
-            <img src="images/portfolio/graphic design/akansha logo.png" class="img-fluid" alt="">
+            <img src="images/portfolio/graphic design/akansha logo.png" class="img-fluid" alt="Logo Design">
 
             <div class="design-info">
-              <h3>Logo Design</h3>
-              <p>Collection of modern brand logo designs.</p>
+              <span class="card-node-id">[LOGO_SYS]</span>
+              <h3>Brand & Logo Design</h3>
+              <p>Distinct identity marks crafted for enterprise and gaming brands.</p>
+              <span class="cyber-view-link">&gt; OPEN_GALLERY_</span>
             </div>
 
           </div>
@@ -553,13 +686,17 @@
         <!-- Game Art -->
         <div class="col-lg-4 col-md-6">
 
-          <div class="design-card" onclick="openGallery('gameart-gallery')">
+          <div class="design-card cyber-design-card" onclick="openGallery('gameart-gallery')">
+            <div class="hud-corner top-left"></div>
+            <div class="hud-corner bottom-right"></div>
 
-            <img src="images/portfolio/graphic design/breakthe chain ui.png" class="img-fluid" alt="">
+            <img src="images/portfolio/graphic design/breakthe chain ui.png" class="img-fluid" alt="Game Art">
 
             <div class="design-info">
-              <h3>Game Art</h3>
-              <p>Concept art and UI assets for games.</p>
+              <span class="card-node-id">[UI_UX]</span>
+              <h3>Game Art & HUD</h3>
+              <p>Concept art, vector assets, and telemetry HUD interface designs.</p>
+              <span class="cyber-view-link">&gt; OPEN_GALLERY_</span>
             </div>
 
           </div>
@@ -569,13 +706,17 @@
         <!-- Special Days Flyer -->
         <div class="col-lg-4 col-md-6">
 
-          <div class="design-card" onclick="openGallery('special-days-gallery')">
+          <div class="design-card cyber-design-card" onclick="openGallery('special-days-gallery')">
+            <div class="hud-corner top-left"></div>
+            <div class="hud-corner bottom-right"></div>
 
             <img src="images/portfolio/special days/womens day flyer 8th.jpg" class="img-fluid" alt="Special Days">
 
             <div class="design-info">
-              <h3>Special Days</h3>
-              <p>Creative flyers for happy special days and celebrations.</p>
+              <span class="card-node-id">[COMM_04]</span>
+              <h3>Special Event Flyers</h3>
+              <p>Celebratory announcements and tactical promo materials.</p>
+              <span class="cyber-view-link">&gt; OPEN_GALLERY_</span>
             </div>
 
           </div>
@@ -585,13 +726,17 @@
         <!-- Hiring Flyers -->
         <div class="col-lg-4 col-md-6">
 
-          <div class="design-card" onclick="openGallery('hiring-flyers-gallery')">
+          <div class="design-card cyber-design-card" onclick="openGallery('hiring-flyers-gallery')">
+            <div class="hud-corner top-left"></div>
+            <div class="hud-corner bottom-right"></div>
 
             <img src="images/portfolio/hiring flyers/HIRING FLYER edited-01.jpg" class="img-fluid" alt="Hiring Flyers">
 
             <div class="design-info">
-              <h3>Hiring Flyers</h3>
-              <p>Professional hiring flyers and recruitment designs.</p>
+              <span class="card-node-id">[TALENT_SYS]</span>
+              <h3>Recruitment Flyers</h3>
+              <p>High-conversion recruitment graphics for corporate networks.</p>
+              <span class="cyber-view-link">&gt; OPEN_GALLERY_</span>
             </div>
 
           </div>
@@ -601,14 +746,18 @@
         <!-- Ad & Web Flyers -->
         <div class="col-lg-4 col-md-6">
 
-          <div class="design-card" onclick="openGallery('ad-flyers-gallery')">
+          <div class="design-card cyber-design-card" onclick="openGallery('ad-flyers-gallery')">
+            <div class="hud-corner top-left"></div>
+            <div class="hud-corner bottom-right"></div>
 
             <img src="images/portfolio/ad flyers/Website banner mrcog  WEB-01.webp" class="img-fluid"
               alt="Ad & Web Flyers">
 
             <div class="design-info">
-              <h3>Ad & Web Flyers</h3>
-              <p>Professional promotional banners and landing page flyers for web marketing.</p>
+              <span class="card-node-id">[BANNER_NET]</span>
+              <h3>Ad & Web Banners</h3>
+              <p>Landing page visuals and digital marketing assets.</p>
+              <span class="cyber-view-link">&gt; OPEN_GALLERY_</span>
             </div>
 
           </div>
@@ -621,52 +770,65 @@
   </section>
 
   <!-- ===== Motion Graphics & Video Editing Section ===== -->
-  <section id="motion-graphics" class="paddsection">
+  <section id="motion-graphics" class="paddsection cyber-section">
 
     <div class="container text-center">
 
-      <div class="section-title">
-        <h2 class="modern-title">Motion Graphics & Video Editing</h2>
-        <p>Creative commercial ads, dynamic transitions, and engaging animations.</p>
+      <div class="section-title cyber-section-header">
+        <span class="cyber-section-tag">// TEMPORAL_PIPELINE //</span>
+        <h2 class="modern-title cyber-section-title">MOTION GRAPHICS & VFX</h2>
+        <p class="cyber-section-sub">Cinematic pacing, procedural animation, and commercial visual effects.</p>
       </div>
 
       <div class="row">
 
         <!-- Commercial & Promotional Ads -->
         <div class="col-lg-4 col-md-6">
-          <div class="design-card" onclick="openGallery('promo-gallery')">
+          <div class="design-card cyber-design-card" onclick="openGallery('promo-gallery')">
+            <div class="hud-corner top-left"></div>
+            <div class="hud-corner bottom-right"></div>
             <video class="img-fluid" muted loop playsinline autoplay preload="metadata">
               <source src="videos/1.mp4" type="video/mp4">
             </video>
             <div class="design-info">
-              <h3>Commercials & Promo Videos</h3>
-              <p>Engaging promotional and advertising video edits.</p>
+              <span class="card-node-id">[VFX_01]</span>
+              <h3>Commercials & Promo Ads</h3>
+              <p>High-energy visual pacing and motion design for brand campaigns.</p>
+              <span class="cyber-view-link">&gt; WATCH_REEL_</span>
             </div>
           </div>
         </div>
 
         <!-- Motion Design & VFX -->
         <div class="col-lg-4 col-md-6">
-          <div class="design-card" onclick="openGallery('motion-gallery')">
+          <div class="design-card cyber-design-card" onclick="openGallery('motion-gallery')">
+            <div class="hud-corner top-left"></div>
+            <div class="hud-corner bottom-right"></div>
             <video class="img-fluid" muted loop playsinline autoplay preload="metadata">
               <source src="videos/3.mp4" type="video/mp4">
             </video>
             <div class="design-info">
+              <span class="card-node-id">[MOTION_02]</span>
               <h3>Motion Graphics & Visuals</h3>
-              <p>Dynamic text animation, visual effects, and graphic motion design.</p>
+              <p>Dynamic typography animations, kinetic transitions, and compositing.</p>
+              <span class="cyber-view-link">&gt; WATCH_REEL_</span>
             </div>
           </div>
         </div>
 
         <!-- Cinematic Edits -->
         <div class="col-lg-4 col-md-6">
-          <div class="design-card" onclick="openGallery('cinematic-gallery')">
+          <div class="design-card cyber-design-card" onclick="openGallery('cinematic-gallery')">
+            <div class="hud-corner top-left"></div>
+            <div class="hud-corner bottom-right"></div>
             <video class="img-fluid" muted loop playsinline autoplay preload="metadata">
               <source src="videos/5.mp4" type="video/mp4">
             </video>
             <div class="design-info">
-              <h3>Cinematic Edits</h3>
-              <p>Color grading, sound design, and narrative-driven video editing projects.</p>
+              <span class="card-node-id">[CINEMA_03]</span>
+              <h3>Cinematic Sequences</h3>
+              <p>Moody color grading, sound design, and narrative-driven sequences.</p>
+              <span class="cyber-view-link">&gt; WATCH_REEL_</span>
             </div>
           </div>
         </div>
@@ -925,111 +1087,189 @@
     <video id="viewerVideo" controls autoplay onclick="event.stopPropagation()"></video>
   </div>
   <!-- ===== Web Projects Section ===== -->
-  <section id="web-projects" class="paddsection text-center">
+  <section id="web-projects" class="paddsection text-center cyber-section">
     <div class="container">
 
-      <div class="section-title text-center">
-        <h2>Web Projects</h2>
-        <p style="font-size:13px;letter-spacing:2px;color:#00ff9d;margin-top:-40px;margin-bottom:50px;">SITES I BUILT
-        </p>
+      <div class="section-title text-center cyber-section-header">
+        <span class="cyber-section-tag">// NETWORK_NODES //</span>
+        <h2 class="cyber-section-title">DEPLOYED WEB SYSTEMS</h2>
+        <p class="cyber-section-sub">Production web applications, client solutions, and 3D web experiences.</p>
       </div>
 
       <div class="web-projects-grid">
 
-        <!-- Card 1: StudyMEDIC -->
+        <!-- Card 1: Mivi Media (⭐ FEATURED CLIENT) -->
+        <a href="https://mivimedia.in/" target="_blank" rel="noopener noreferrer"
+          class="web-project-card cyber-web-card featured-project-card">
+          <div class="featured-badge"><i class="fas fa-crown"></i> FEATURED PRODUCTION CLIENT</div>
+          <div class="wp-icon cyber-node-icon"><i class="fas fa-video cyber-glitch-icon"></i></div>
+          <div class="wp-info">
+            <h3>Mivi Media <span class="client-badge">[LIVE CLIENT]</span></h3>
+            <p>Official digital agency platform featuring high-impact visual production, video showreels, and responsive client portal.</p>
+            <div class="wp-tags-wrap">
+              <span class="wp-tag">Media Production</span>
+              <span class="wp-tag">Responsive UI</span>
+              <span class="wp-tag">Production Live</span>
+            </div>
+          </div>
+          <div class="wp-arrow cyber-arrow">&gt; EXEC_</div>
+        </a>
+
+        <!-- Card 2: StudyMEDIC -->
         <a href="https://sridhinraj.github.io/studymedic-website./" target="_blank" rel="noopener noreferrer"
-          class="web-project-card">
-          <div class="wp-icon">🏥</div>
+          class="web-project-card cyber-web-card">
+          <div class="wp-icon cyber-node-icon"><i class="fas fa-hospital-user cyber-glitch-icon"></i></div>
           <div class="wp-info">
             <h3>StudyMEDIC</h3>
-            <p>Medical education platform with partner hospital showcase and premium UI.</p>
-            <span class="wp-tag">HTML · CSS · JS</span>
+            <p>Premier medical education ecosystem featuring partner hospital integrations and bespoke learning UX.</p>
+            <div class="wp-tags-wrap">
+              <span class="wp-tag">HTML5</span>
+              <span class="wp-tag">CSS3</span>
+              <span class="wp-tag">Vanilla JS</span>
+            </div>
           </div>
-          <div class="wp-arrow">↗</div>
+          <div class="wp-arrow cyber-arrow">&gt; EXEC_</div>
         </a>
 
-        <!-- Card 2: Wild Berry -->
+        <!-- Card 3: Wild Berry -->
         <a href="https://sridhinraj.github.io/WildBerry.io/" target="_blank" rel="noopener noreferrer"
-          class="web-project-card">
-          <div class="wp-icon">🍓</div>
+          class="web-project-card cyber-web-card">
+          <div class="wp-icon cyber-node-icon"><i class="fas fa-gem cyber-glitch-icon"></i></div>
           <div class="wp-info">
             <h3>Wild Berry</h3>
-            <p>Premium catering & events website with 3D animations and glassmorphic design.</p>
-            <span class="wp-tag">Three.js · GSAP · CSS</span>
+            <p>Bespoke events and catering experience powered by 3D interactions and glassmorphic aesthetics.</p>
+            <div class="wp-tags-wrap">
+              <span class="wp-tag">Three.js</span>
+              <span class="wp-tag">GSAP</span>
+              <span class="wp-tag">WebGL</span>
+            </div>
           </div>
-          <div class="wp-arrow">↗</div>
+          <div class="wp-arrow cyber-arrow">&gt; EXEC_</div>
         </a>
 
-        <!-- Card 3: This Portfolio -->
-        <a href="https://sridhinraj.github.io/" target="_blank" rel="noopener noreferrer" class="web-project-card">
-          <div class="wp-icon">🎮</div>
+        <!-- Card 4: This Portfolio -->
+        <a href="https://sridhinraj.github.io/" target="_blank" rel="noopener noreferrer" class="web-project-card cyber-web-card">
+          <div class="wp-icon cyber-node-icon"><i class="fas fa-terminal cyber-glitch-icon"></i></div>
           <div class="wp-info">
-            <h3>My Portfolio</h3>
-            <p>This very site — a game-dev portfolio with particles, GSAP, and cyberpunk aesthetics.</p>
-            <span class="wp-tag">GSAP · Particles · Vanilla JS</span>
+            <h3>Matrix Terminal (This Site)</h3>
+            <p>Cyberpunk game developer portfolio featuring particle physics, glitch telemetry, and CRT shaders.</p>
+            <div class="wp-tags-wrap">
+              <span class="wp-tag">Cyberpunk HUD</span>
+              <span class="wp-tag">Particles.js</span>
+              <span class="wp-tag">CRT Matrix</span>
+            </div>
           </div>
-          <div class="wp-arrow">↗</div>
+          <div class="wp-arrow cyber-arrow">&gt; EXEC_</div>
         </a>
 
-        <!-- Card 4: Syamjithas -->
+        <!-- Card 5: Syamjithas -->
         <a href="https://albin6055.github.io/syamjithas-github.io/" target="_blank" rel="noopener noreferrer"
-          class="web-project-card">
-          <div class="wp-icon">🌐</div>
+          class="web-project-card cyber-web-card">
+          <div class="wp-icon cyber-node-icon"><i class="fas fa-globe cyber-glitch-icon"></i></div>
           <div class="wp-info">
             <h3>Syamjithas</h3>
-            <p>Custom personal website built and deployed for a client via GitHub Pages.</p>
-            <span class="wp-tag">HTML · CSS · GitHub Pages</span>
+            <p>Custom personal brand website designed and deployed via GitHub Pages infrastructure.</p>
+            <div class="wp-tags-wrap">
+              <span class="wp-tag">HTML5</span>
+              <span class="wp-tag">CSS3</span>
+              <span class="wp-tag">GitHub Pages</span>
+            </div>
           </div>
-          <div class="wp-arrow">↗</div>
+          <div class="wp-arrow cyber-arrow">&gt; EXEC_</div>
         </a>
 
       </div>
     </div>
   </section>
 
-  <!-- ===== Footer ===== -->
-  <section id="contact" class="paddsection">
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="paddsection cyber-section">
 
     <div class="container">
 
-      <h2>Contact Me</h2>
-      <p>If you'd like to work together or have a project in mind, feel free to send a message.</p>
+      <div class="cyber-section-header text-center">
+        <span class="cyber-section-tag">// TRANSMISSION_UPLINK //</span>
+        <h2 class="cyber-section-title">ESTABLISH CONNECTION</h2>
+        <p class="cyber-section-sub">Have a mission briefing, technical challenge, or project in mind? Transmit your signal.</p>
+      </div>
 
-      <form action="https://formspree.io/f/mwvrvodp" method="POST" class="contact-form">
+      <div class="cyber-contact-frame">
+        <div class="hud-corner top-left"></div>
+        <div class="hud-corner top-right"></div>
+        <div class="hud-corner bottom-left"></div>
+        <div class="hud-corner bottom-right"></div>
 
-        <div class="form-group">
-          <input type="text" name="name" placeholder="Your Name" required>
+        <div class="terminal-bar">
+          <span class="term-dot red"></span>
+          <span class="term-dot yellow"></span>
+          <span class="term-dot green"></span>
+          <span class="term-title">uplink://secure.protocol.transmit</span>
         </div>
 
-        <div class="form-group">
-          <input type="email" name="email" placeholder="Your Email" required>
-        </div>
+        <form action="https://formspree.io/f/mwvrvodp" method="POST" class="contact-form cyber-terminal-form">
 
-        <div class="form-group">
-          <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-        </div>
+          <div class="form-group cyber-input-group">
+            <label class="cyber-input-label">&gt; OPERATOR_IDENTIFIER:</label>
+            <div class="input-with-icon">
+              <i class="fas fa-user-tag cyber-glitch-icon input-ico"></i>
+              <input type="text" name="name" placeholder="Enter your callsign / name..." required>
+            </div>
+          </div>
 
-        <button type="submit">Send Message</button>
+          <div class="form-group cyber-input-group">
+            <label class="cyber-input-label">&gt; SIGNAL_FREQUENCY (EMAIL):</label>
+            <div class="input-with-icon">
+              <i class="fas fa-satellite-dish cyber-glitch-icon input-ico"></i>
+              <input type="email" name="email" placeholder="name@domain.com..." required>
+            </div>
+          </div>
 
-      </form>
+          <div class="form-group cyber-input-group">
+            <label class="cyber-input-label">&gt; TRANSMISSION_PAYLOAD:</label>
+            <div class="input-with-icon">
+              <i class="fas fa-code-commit cyber-glitch-icon input-ico"></i>
+              <textarea name="message" placeholder="Provide mission parameters / project briefing..." rows="5" required></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="cyber-submit-btn">
+            <span class="btn-bracket">[</span>
+            <i class="fas fa-paper-plane cyber-btn-icon cyber-glitch-icon"></i>
+            <span class="btn-label">TRANSMIT_PACKET</span>
+            <span class="btn-bracket">]</span>
+          </button>
+
+        </form>
+      </div>
 
     </div>
 
   </section>
-  <div id="footer" class="text-center">
+
+  <!-- ===== Cyberpunk Footer ===== -->
+  <div id="footer" class="text-center cyber-footer">
     <div class="container">
+      <div class="footer-telemetry-bar">
+        <span class="telemetry-pill"><i class="fas fa-circle-nodes cyber-glitch-icon"></i> SYS_STATUS: OPERATIONAL</span>
+        <span class="telemetry-pill"><i class="fas fa-shield-halved cyber-glitch-icon"></i> PROTOCOL: SECURE</span>
+        <span class="telemetry-pill"><i class="fas fa-clock cyber-glitch-icon"></i> LATENCY: 12ms</span>
+      </div>
+
       <div class="socials-media text-center">
-        <ul class="list-unstyled">
+        <ul class="list-unstyled d-flex justify-content-center cyber-social-links">
           <li><a href="https://www.facebook.com/Sridhinrajsro" title="Facebook" target="_blank"
-              rel="noopener noreferrer"><i class="ion-social-facebook"></i></a></li>
+              rel="noopener noreferrer"><i class="fab fa-facebook-f cyber-glitch-icon"></i> <span class="soc-label">[FB]</span></a></li>
           <li><a href="https://www.instagram.com/sridhin_raj_" title="Instagram" target="_blank"
-              rel="noopener noreferrer"><i class="ion-social-instagram"></i></a></li>
+              rel="noopener noreferrer"><i class="fab fa-instagram cyber-glitch-icon"></i> <span class="soc-label">[IG]</span></a></li>
           <li><a href="https://www.linkedin.com/in/sridhin-raj-kp-979bb4255" title="LinkedIn" target="_blank"
-              rel="noopener noreferrer"><i class="ion-social-linkedin"></i></a></li>
+              rel="noopener noreferrer"><i class="fab fa-linkedin-in cyber-glitch-icon"></i> <span class="soc-label">[IN]</span></a></li>
         </ul>
       </div>
-      <p>&copy; Copyright 2026 Sridhin. All Rights Reserved.</p>
-      <div class="credits">Designed with s❤️k</div>
+
+      <div class="cyber-footer-meta">
+        <p class="cyber-copy">&copy; 2026 // SRIDHINRAJ K.P. // ALL RIGHTS RESERVED.</p>
+        <div class="cyber-credits">&gt; CRAFTED WITH CRT MATRIX PHOSPHOR & TECHNICAL PASSION_</div>
+      </div>
     </div>
   </div>
 
@@ -1148,10 +1388,12 @@
     }, 100);
 
     function initGSAPAnimations() {
-      // Hero Header Animations
-      gsap.from(".header-content h1", { y: 100, opacity: 0, duration: 1, ease: "power4.out" });
-      gsap.from(".header-content .role-container", { y: 50, opacity: 0, duration: 1, delay: 0.3, ease: "power4.out" });
-      gsap.from(".header-content .cv-buttons", { y: 50, opacity: 0, duration: 1, delay: 0.5, ease: "power4.out" });
+      // Cyber Hero Entrance Animations
+      gsap.from(".cyber-terminal-meta", { y: -20, opacity: 0, duration: 0.8, ease: "power3.out" });
+      gsap.from(".cyber-glitch-title span", { y: 60, opacity: 0, duration: 1, stagger: 0.15, ease: "power4.out" });
+      gsap.from(".cyber-tagline-box", { x: -30, opacity: 0, duration: 0.8, delay: 0.4, ease: "power3.out" });
+      gsap.from(".cyber-actions-group a", { x: -20, opacity: 0, duration: 0.6, stagger: 0.1, delay: 0.6, ease: "power2.out" });
+      gsap.from(".cyber-portrait-frame", { scale: 0.9, opacity: 0, duration: 1.2, delay: 0.3, ease: "back.out(1.4)" });
 
       // Staggering Scroll Animations for all titles
       gsap.utils.toArray(".section-title h2").forEach(title => {
@@ -1191,7 +1433,7 @@
 
     // Magnetic Links
     // Apply .magnetic wrapper class to everything we want to pull
-    document.querySelectorAll(".nav-menu a, .play-btn, .btn, .btn-ats, .web-project-card").forEach(btn => {
+    document.querySelectorAll(".nav-menu a, .play-btn, .btn, .cyber-link-btn, .btn-ats, .web-project-card").forEach(btn => {
       btn.classList.add("magnetic");
 
       btn.addEventListener("mousemove", (e) => {

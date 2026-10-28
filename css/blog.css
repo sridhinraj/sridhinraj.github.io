@@ -136,6 +136,10 @@
   background: #fff;
 }
 
+.cmt .message-textarea {
+  height: 200px;
+}
+
 blockquote {
   padding: 40px;
   background-color: #f2f2f2;
